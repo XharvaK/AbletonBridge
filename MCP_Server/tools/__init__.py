@@ -3,6 +3,7 @@ from . import (
     session, tracks, clips, devices, browser, mixer,
     automation, arrangement, scenes, creative, m4l_tools,
     snapshots, audio, grid, workflows,
+    midi_cc,
 )
 
 
@@ -23,3 +24,4 @@ def register_all_tools(mcp):
     audio.register_tools(mcp)
     grid.register_tools(mcp)
     workflows.register_tools(mcp)
+    midi_cc.register_tools(mcp)
